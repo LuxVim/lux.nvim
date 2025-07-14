@@ -22,17 +22,17 @@ M.setup = function(colors, utils)
         ['@label']                 = { fg = c.purple },
 
         -- Strings
-        ['@string']                = { fg = c.green },
+        ['@string']                = { fg = c.pink2},
         ['@string.documentation']  = { fg = c.lime, italic = true },
         ['@string.regexp']         = { fg = c.cyan },
         ['@string.escape']         = { fg = c.yellow },
         ['@string.special']        = { fg = c.yellow },
         ['@string.special.symbol'] = { fg = c.cyan },
         ['@string.special.url']    = { fg = c.cyan, underline = true },
-        ['@string.special.path']   = { fg = c.green },
+        ['@string.special.path']   = { fg = c.pink2},
 
         -- Characters and numbers
-        ['@character']             = { fg = c.green },
+        ['@character']             = { fg = c.pink2},
         ['@character.special']     = { fg = c.yellow },
         ['@boolean']               = { fg = c.orange, bold = true },
         ['@number']                = { fg = c.pink },
@@ -95,17 +95,17 @@ M.setup = function(colors, utils)
         ['@markup.heading.2']      = { fg = c.purple, bold = true },
         ['@markup.heading.3']      = { fg = c.blue, bold = true },
         ['@markup.heading.4']      = { fg = c.cyan, bold = true },
-        ['@markup.heading.5']      = { fg = c.green, bold = true },
+        ['@markup.heading.5']      = { fg = c.pink2, bold = true },
         ['@markup.heading.6']      = { fg = c.yellow, bold = true },
         ['@markup.quote']          = { fg = c.fg2, italic = true },
         ['@markup.math']           = { fg = c.pink },
         ['@markup.link']           = { fg = c.cyan, underline = true },
         ['@markup.link.label']     = { fg = c.blue },
         ['@markup.link.url']       = { fg = c.cyan, underline = true },
-        ['@markup.raw']            = { fg = c.green },
-        ['@markup.raw.block']      = { fg = c.green },
+        ['@markup.raw']            = { fg = c.pink2},
+        ['@markup.raw.block']      = { fg = c.pink2},
         ['@markup.list']           = { fg = c.purple },
-        ['@markup.list.checked']   = { fg = c.green },
+        ['@markup.list.checked']   = { fg = c.pink2},
         ['@markup.list.unchecked'] = { fg = c.fg2 },
 
         -- Tags
@@ -115,7 +115,7 @@ M.setup = function(colors, utils)
         ['@tag.delimiter']         = { fg = c.fg1 },
 
         -- Diff
-        ['@diff.plus']             = { fg = c.green },
+        ['@diff.plus']             = { fg = c.pink2},
         ['@diff.minus']            = { fg = c.red },
         ['@diff.delta']            = { fg = c.blue },
 

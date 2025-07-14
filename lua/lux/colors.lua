@@ -1,42 +1,48 @@
-local M     = {}
+local M = {}
 
-M.palette   = {
+M.palette = {
     -- BACKGROUND
-    bg0      = "#0D1126",
-    bg1      = "#141A35",
-    bg2      = "#1B2142",
-    bg3      = "#222850",
-    bg4      = "#2A305E",
-    bg_dark  = "#09091F",
-    bg_float = "#111729",
+    bg0      = "#0f0f23",   -- deep space
+    bg1      = "#1a1a2e",   -- outer layer
+    bg2      = "#16213e",   -- inner layer
+    bg3      = "#1f2937",   -- soft slate shadow
+    bg4      = "#2A305E",   -- dim depth
+    bg_dark  = "#0f0f23",
+    bg_float = "#1a1a2e",
 
     -- FOREGROUND
-    fg0      = "#F8F8FF",
-    fg1      = "#DCD6FF",
-    fg2      = "#B5AFFF",
-    fg3      = "#9B94E6",
+    fg0      = "#ffffff",   -- base white
+    fg1      = "#e0e7ff",   -- pale indigo
+    fg2      = "#c7d2fe",   -- soft lilac
+    fg3      = "#a5b4fc",   -- faded lavender
 
-    -- MAIN COLORS 
-    blue     = "#82AAFF",
-    cyan     = "#5FFFD3",
-    teal     = "#00F5C5",
-    green    = "#A4FFB0",
-    yellow   = "#FFEA70",
-    orange   = "#FFB86C",
-    red      = "#FF6C91",
-    pink     = "#FF3CCF",
-    magenta  = "#C85CFF",
-    purple   = "#A97CFF",
-    violet   = "#9D7CD8",
-    lime     = "#9ECE6A",
-    gold     = "#E0AF68",
-    crimson  = "#F7768E",
-    aqua     = "#73DACA",
-    coral    = "#FF9E64",
-    lavender = "#7287ff",
-  
-    -- UI 
+    -- PRIMARY ACCENTS (warm + vibrant)
+    purple   = "#a855f7",   -- main accent purple
+    indigo   = "#8b5cf6",   -- deep indigo
+    grape    = "#7c3aed",   -- Tailwind grape
+    pink     = "#ec4899",   -- vibrant pink
+    magenta  = "#be185d",   -- rich magenta
+    red      = "#F7768E",   -- soft crimson-pink
+    coral    = "#FF9E64",   -- warm coral
+    orange   = "#FFB86C",   -- highlight orange
+    gold     = "#E0AF68",   -- light gold
+    pink2    = "#f6339a",
+    -- COOL ACCENTS (muted/soft only)
+    blue     = "#3b82f6",   -- Tailwind blue (for rare highlights)
+    cyan     = "#70cfc4",   -- soft aqua
+    teal     = "#4daaa0",   -- faded teal
+    violet   = "#9D7CD8",   -- gentle contrast
+    aqua     = "#86c9bc",   -- optional UI tint
+
+    -- RGBA / Transparency Inspired
+    purple_10 = "rgba(168, 85, 247, 0.1)",
+    purple_20 = "rgba(168, 85, 247, 0.2)",
+    purple_30 = "rgba(168, 85, 247, 0.3)",
+    purple_50 = "rgba(168, 85, 247, 0.5)",
+
+    -- UI
     border   = "#2A305E",
     none     = "NONE",
 }
+
 return M
