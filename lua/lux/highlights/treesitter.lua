@@ -1,35 +1,78 @@
 local M = {}
 
 M.setup = function(colors, utils)
-    local c  = colors.palette
-    local hl = utils.highlight_all
+  local c  = colors.palette
+  local hl = utils.highlight_all
 
-    hl({
-        ['@comment']               = { fg = c.fg2, italic = true },
-        ['@constant']              = { fg = c.orange },
-        ['@string']                = { fg = c.gold },
-        ['@character']             = { fg = c.yellow },
-        ['@number']                = { fg = c.magenta },
-        ['@boolean']               = { fg = c.orange, bold = true },
-        ['@float']                 = { fg = c.magenta },
+  hl({
+    -- Comments & Documentation
+    ['@comment']               = { fg = c.fg2, italic = true },
 
-        ['@function']              = { fg = c.pink, bold = true },
-        ['@function.builtin']      = { fg = c.pink, italic = true },
-        ['@function.call']         = { fg = c.pink },
-        ['@function.macro']        = { fg = c.orange },
-        ['@function.method']       = { fg = c.pink },
-        ['@function.method.call']  = { fg = c.pink },
-        ['@constructor']           = { fg = c.orange },
+    -- Literals
+    ['@string']                = { fg = c.gold },
+    ['@character']             = { fg = c.yellow },
+    ['@number']                = { fg = c.magenta },
+    ['@boolean']               = { fg = c.orange, bold = true },
+    ['@float']                 = { fg = c.magenta },
 
-        ['@type']                  = { fg = c.yellow },
-        ['@type.definition']       = { fg = c.red, bold = true },
-        ['@attribute']             = { fg = c.orange },
-        ['@property']              = { fg = c.coral },
+    -- Constants & Variables
+    ['@constant']              = { fg = c.pink },
+    ['@constant.builtin']      = { fg = c.flamengo },
+    ['@constant.macro']        = { fg = c.indigo },
+    ['@variable']              = { fg = c.coral },
+    ['@variable.builtin']      = { fg = c.flamengo },
+    ['@variable.parameter']    = { fg = c.coral },
+    ['@property']              = { fg = c.coral },
 
-        ['@operator']              = { fg = c.coral },
-        ['@keyword']               = { fg = c.orange, bold = true },
-        ['@keyword.coroutine']     = { fg = c.magenta, bold = true },
-    })
+    -- Functions & Methods
+    ['@function']              = { fg = c.flamengo, bold = true },
+    ['@function.builtin']      = { fg = c.indigo },
+    ['@function.call']         = { fg = c.flamengo },
+    ['@function.macro']        = { fg = c.indigo, bold = true },
+    ['@function.method']       = { fg = c.flamengo },
+    ['@function.method.call']  = { fg = c.flamengo },
+    ['@constructor']           = { fg = c.orange },
+
+    -- Keywords
+    ['@keyword']               = { fg = c.grape, bold = true },
+    ['@keyword.import']        = { fg = c.grape, bold = true },
+    ['@keyword.function']      = { fg = c.grape },
+    ['@keyword.operator']      = { fg = c.coral },
+    ['@keyword.coroutine']     = { fg = c.magenta, italic = true },
+
+    -- Types & Attributes
+    ['@type']                  = { fg = c.teal, bold = true },
+    ['@type.builtin']          = { fg = c.teal },
+    ['@type.definition']       = { fg = c.orange },
+    ['@type.qualifier']        = { fg = c.indigo },
+    ['@attribute']             = { fg = c.indigo, italic = true },
+
+    -- Modules & Namespaces
+    ['@namespace']             = { fg = c.blue },
+    ['@module']                = { fg = c.blue },
+
+    -- Operators, Control Flow & Punctuation
+    ['@operator']              = { fg = c.coral },
+    ['@conditional']           = { fg = c.grape },
+    ['@repeat']                = { fg = c.grape },
+    ['@label']                 = { fg = c.indigo },
+    ['@punctuation.delimiter'] = { fg = c.fg1 },
+    ['@punctuation.bracket']   = { fg = c.fg2 },
+    ['@punctuation.special']   = { fg = c.orange },
+
+    -- Tags (HTML, XML, JSX)
+    ['@tag']                   = { fg = c.orange },
+    ['@tag.attribute']         = { fg = c.coral },
+    ['@tag.delimiter']         = { fg = c.fg3 },
+
+    -- Decorators & Annotations
+    ['@decorator']             = { fg = c.indigo, italic = true },
+    ['@annotation']            = { fg = c.indigo, italic = true },
+
+    -- Embedded/injected languages
+    ['@embedded']              = { fg = c.flamengo },
+    ['@language']              = { fg = c.cyan },
+  })
 end
 
 return M

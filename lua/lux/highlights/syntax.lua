@@ -5,44 +5,65 @@ M.setup = function(colors, utils)
   local hl = utils.highlight_all
 
   hl({
-    -- Prefer warm colors for main elements
+    -- Core UI
     Normal            = { fg = c.fg0, bg = c.bg0 },
-    Comment           = { fg = c.fg2, italic = true },
-    Constant          = { fg = c.pink2},
-    Identifier        = { fg = c.pink },
-    Statement         = { fg = c.magenta, bold = true },
-    PreProc           = { fg = c.coral },
-    Type              = { fg = c.aqua},
-    Special           = { fg = c.blue},
-    Underlined        = { fg = c.coral, underline = true },
-    Ignore            = { fg = c.fg3 },
-    Error             = { fg = c.red, bold = true },
-    Todo              = { fg = c.yellow, bg = c.bg1, bold = true },
-    Function          = { fg = c.pink, bold = true },
-    Keyword           = { fg = c.orange, bold = true },
-    String            = { fg = c.gold },
-    Character         = { fg = c.yellow },
-    Number            = { fg = c.magenta },
-    Boolean           = { fg = c.orange, bold = true },
-    Float             = { fg = c.magenta },
-
-    -- UI/utility highlights (border, status, selection)
+    Cursor            = { fg = c.bg0, bg = c.fg0 },
+    CursorLine        = { bg = c.bg1 },
+    CursorLineNr      = { fg = c.orange, bold = true },
+    LineNr            = { fg = c.fg3 },
+    Visual            = { bg = c.bg3 },
     StatusLine        = { fg = c.fg0, bg = c.bg2, bold = true },
     StatusLineNC      = { fg = c.fg1, bg = c.bg1 },
     VertSplit         = { fg = c.border },
 
-    Cursor            = { fg = c.bg0, bg = c.fg0 },
-    CursorLine        = { bg = c.bg1 },
-    CursorLineNr      = { fg = c.yellow, bold = true },
-    LineNr            = { fg = c.fg2 },
-    Visual            = { bg = c.bg3 },
+    -- Search & Matching
+    Search            = { fg = c.bg0, bg = c.teal },
+    IncSearch         = { fg = c.bg0, bg = c.pink },
+    MatchParen        = { fg = c.indigo, bg = c.bg3, bold = true },
+    Directory         = { fg = c.blue, bold = true },
 
-    Search            = { fg = c.bg0, bg = c.yellow },
-    IncSearch         = { fg = c.bg0, bg = c.orange },
-    MatchParen        = { fg = c.coral, bg = c.bg3, bold = true },
-    Directory         = { fg = c.gold, bold = true },
+    -- Comments and Documentation
+    Comment           = { fg = c.fg2, italic = true },
 
-    -- Spell
+    -- Constants & Literals
+    Constant          = { fg = c.pink },
+    Number            = { fg = c.red },
+    Boolean           = { fg = c.orange, bold = true },
+    Float             = { fg = c.magenta },
+    String            = { fg = c.gold },
+    Character         = { fg = c.yellow },
+
+    -- Identifiers and Functions
+    Identifier        = { fg = c.flamengo },
+    Function          = { fg = c.flamengo, bold = true },
+
+    -- Keywords & Statements
+    Keyword           = { fg = c.grape, bold = true },
+    Statement         = { fg = c.magenta, bold = true },
+    Conditional       = { fg = c.grape },
+    Repeat            = { fg = c.grape },
+
+    -- Preprocessor / Attributes / Macros
+    PreProc           = { fg = c.indigo },
+    Macro             = { fg = c.indigo, bold = true },
+
+    -- Types & Structures
+    Type              = { fg = c.teal, bold = true },
+    Typedef           = { fg = c.orange },
+    Structure         = { fg = c.orange },
+    StorageClass      = { fg = c.indigo },
+
+    -- Operators and Miscellaneous
+    Operator          = { fg = c.coral },
+    Special           = { fg = c.blue },
+    Underlined        = { fg = c.orange, underline = true },
+    Ignore            = { fg = c.bg3 },
+
+    -- Diagnostics
+    Error             = { fg = c.red, bold = true },
+    Todo              = { fg = c.gold, bg = c.bg1, bold = true },
+
+    -- Spelling
     SpellBad          = { undercurl = true, sp = c.red },
     SpellCap          = { undercurl = true, sp = c.magenta },
     SpellLocal        = { undercurl = true, sp = c.coral },
