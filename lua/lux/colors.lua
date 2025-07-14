@@ -26,7 +26,7 @@ M.palette = {
     coral    = "#FF9E64",   -- warm coral
     orange   = "#FFB86C",   -- highlight orange
     gold     = "#E0AF68",   -- light gold
-    pink2    = "#f6339a",
+    flamengo = "#f6339a",
     -- COOL ACCENTS (muted/soft only)
     blue     = "#3b82f6",   -- Tailwind blue (for rare highlights)
     cyan     = "#70cfc4",   -- soft aqua

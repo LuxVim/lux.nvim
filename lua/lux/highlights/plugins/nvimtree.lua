@@ -6,17 +6,16 @@ M.setup = function(colors, utils)
 
     hl({
         NvimTreeNormal           = { fg = c.fg1,    bg   = c.bg_dark },
-        NvimTreeRootFolder       = { fg = c.purple, bold = true      },
+        NvimTreeRootFolder       = { fg = c.orange, bold = true      },
         NvimTreeGitDirty         = { fg = c.yellow                   },
-        NvimTreeGitNew           = { fg = c.green                    },
+        NvimTreeGitNew           = { fg = c.gold                     },
         NvimTreeGitDeleted       = { fg = c.red                      },
-        NvimTreeSpecialFile      = { fg = c.yellow, underline = true },
-        NvimTreeIndentMarker     = { fg = c.fg3                      },
-        NvimTreeImageFile        = { fg = c.purple                   },
-        NvimTreeSymlink          = { fg = c.cyan                     },
-        NvimTreeFolderName       = { fg = c.blue                     },
-        NvimTreeFolderIcon       = { fg = c.blue                     },
-        NvimTreeOpenedFolderName = { fg = c.blue,   bold = true      },
+        NvimTreeSpecialFile      = { fg = c.pink, underline = true   },
+        NvimTreeIndentMarker     = { fg = c.gold                     },
+        NvimTreeImageFile        = { fg = c.magenta                  },
+        NvimTreeSymlink          = { fg = c.coral                    },
+        NvimTreeFolderName       = { fg = c.orange                   },
+        NvimTreeFolderIcon       = { fg = c.orange                   },
     })
 end
 
