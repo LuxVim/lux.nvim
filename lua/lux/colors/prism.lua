@@ -17,28 +17,29 @@ M.palette = {
     fg3      = "#475569",   -- slate-600
 
     -- PRIMARY ACCENTS
-    purple   = "#7c3aed",   -- purple-600
-    indigo   = "#6366f1",   -- indigo-500
-    grape    = "#8b5cf6",   -- violet-500
-    pink     = "#ec4899",   -- pink-500
-    magenta  = "#d946ef",   -- fuchsia-500
-    red      = "#ef4444",   -- red-500
-    coral    = "#f97316",   -- orange-500
-    orange   = "#f59e0b",   -- amber-500
-    gold     = "#eab308",   -- yellow-500
-    flamengo = "#ec4899",   -- pink-500
+    purple   = "#a855f7",   -- purple-500 (lighter)
+    indigo   = "#8b5cf6",   -- violet-500 (lighter purple)
+    grape    = "#a78bfa",   -- violet-400 (lighter)
+    pink     = "#f472b6",   -- pink-400 (lighter)
+    magenta  = "#e879f9",   -- fuchsia-400 (lighter)
+    red      = "#f87171",   -- red-400 (lighter)
+    coral    = "#fb923c",   -- orange-400 (lighter)
+    orange   = "#fbbf24",   -- amber-400 (lighter)
+    gold     = "#fde047",   -- yellow-400 (lighter)
+    flamenco = "#f472b6",   -- pink-400 (lighter)
     -- COOL ACCENTS
-    blue     = "#3b82f6",   -- blue-500
-    cyan     = "#06b6d4",   -- cyan-500
-    teal     = "#14b8a6",   -- teal-500
-    violet   = "#8b5cf6",   -- violet-500
-    aqua     = "#06b6d4",   -- cyan-500
+    blue     = "#60a5fa",   -- blue-400 (lighter)
+    cyan     = "#22d3ee",   -- cyan-400 (lighter)
+    teal     = "#2dd4bf",   -- teal-400 (lighter)
+    violet   = "#a78bfa",   -- violet-400 (lighter)
+    aqua     = "#22d3ee",   -- cyan-400 (lighter)
+    green    = "#4ade80",   -- green-400 (lighter)
 
     -- RGBA / Transparency
-    purple_10 = "rgba(124, 58, 237, 0.1)",
-    purple_20 = "rgba(124, 58, 237, 0.2)",
-    purple_30 = "rgba(124, 58, 237, 0.3)",
-    purple_50 = "rgba(124, 58, 237, 0.5)",
+    purple_10 = "rgba(168, 85, 247, 0.1)",
+    purple_20 = "rgba(168, 85, 247, 0.2)",
+    purple_30 = "rgba(168, 85, 247, 0.3)",
+    purple_50 = "rgba(168, 85, 247, 0.5)",
 
     -- UI
     border   = "#cbd5e1",   -- slate-300
