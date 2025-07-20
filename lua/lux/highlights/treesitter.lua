@@ -19,10 +19,10 @@ M.setup = function(colors, utils)
     ['@constant']              = { fg = c.pink },
     ['@constant.builtin']      = { fg = c.flamengo },
     ['@constant.macro']        = { fg = c.indigo },
-    ['@variable']              = { fg = c.coral },
+    ['@variable']              = { fg = c.teal },
     ['@variable.builtin']      = { fg = c.flamengo },
-    ['@variable.parameter']    = { fg = c.coral },
-    ['@property']              = { fg = c.coral },
+    ['@variable.parameter']    = { fg = c.aqua },
+    ['@property']              = { fg = c.cyan },
 
     -- Functions & Methods
     ['@function']              = { fg = c.flamengo, bold = true },
@@ -30,7 +30,7 @@ M.setup = function(colors, utils)
     ['@function.call']         = { fg = c.flamengo },
     ['@function.macro']        = { fg = c.indigo, bold = true },
     ['@function.method']       = { fg = c.flamengo },
-    ['@function.method.call']  = { fg = c.flamengo },
+    ['@function.method.call']  = { fg = c.purple, bold = true },
     ['@constructor']           = { fg = c.orange },
 
     -- Keywords
@@ -52,7 +52,7 @@ M.setup = function(colors, utils)
     ['@module']                = { fg = c.blue },
 
     -- Operators, Control Flow & Punctuation
-    ['@operator']              = { fg = c.coral },
+    ['@operator']              = { fg = c.fg2 },
     ['@conditional']           = { fg = c.grape },
     ['@repeat']                = { fg = c.grape },
     ['@label']                 = { fg = c.indigo },
