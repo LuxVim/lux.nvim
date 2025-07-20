@@ -3,6 +3,7 @@ local M = {}
 local default_config = {
     transparent     = false,
     dim_inactive    = false,
+    variant         = "vesper",
 
     styles = {
         comments    = { italic  = true },
@@ -24,6 +25,8 @@ M.setup = function(opts)
     vim.o.termguicolors = true
     local colors        = require("lux.colors")
     local utils         = require("lux.utils")
+    
+    colors.apply_variant(config.variant)
   
     if config.transparent then
         colors.palette.bg0      = "NONE"
