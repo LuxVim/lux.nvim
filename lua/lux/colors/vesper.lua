@@ -34,11 +34,11 @@ M.palette = {
     violet   = "#9D7CD8", 
     aqua     = "#86c9bc", 
 
-    -- RGBA / Transparency 
-    purple_10 = "rgba(168, 85, 247, 0.1)",
-    purple_20 = "rgba(168, 85, 247, 0.2)",
-    purple_30 = "rgba(168, 85, 247, 0.3)",
-    purple_50 = "rgba(168, 85, 247, 0.5)",
+    -- Semi-transparent purple colors (converted from RGBA)
+    purple_10 = "#1a1940",  -- 10% purple on dark bg
+    purple_20 = "#251f4d",  -- 20% purple on dark bg
+    purple_30 = "#31255a",  -- 30% purple on dark bg
+    purple_50 = "#4a3674",  -- 50% purple on dark bg
 
     -- UI
     border   = "#2A305E",
