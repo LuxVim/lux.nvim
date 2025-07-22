@@ -1,15 +1,23 @@
+-- Utility functions for highlight management and terminal color setup
 local M = {}
 
+-- Set highlight group with given options
+-- @param group string: Highlight group name
+-- @param opts table: Highlight options (fg, bg, bold, italic, etc.)
 M.highlight = function(group, opts)
     vim.api.nvim_set_hl(0, group, opts)
 end
 
+-- Apply multiple highlight groups at once
+-- @param groups table: Table of highlight group names to options
 M.highlight_all = function(groups)
     for group, opts in pairs(groups) do
         M.highlight(group, opts)
     end
 end
 
+-- Configure terminal colors to match theme palette
+-- @param colors table: Color palette with terminal color mappings
 M.set_terminal_colors = function(colors)
     vim.g.terminal_color_0  = colors.bg0
     vim.g.terminal_color_1  = colors.red

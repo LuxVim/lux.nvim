@@ -1,7 +1,12 @@
+-- Editor highlight groups for core Neovim interface elements
 local M = {}
 
+-- Setup editor highlights using color palette and semantic mappings
+-- @param colors table: Color system with palette and semantic mappings
+-- @param utils table: Utility functions for applying highlights
 M.setup = function(colors, utils)
     local c     = colors.palette
+    local s     = colors.semantic
     local hl    = utils.highlight_all
 
     hl({
@@ -11,10 +16,10 @@ M.setup = function(colors, utils)
         Comment          = { fg = c.fg2, italic = true },
         Conceal          = { fg = c.fg2 },
 
-        Cursor           = { fg = c.bg0, bg = c.purple },
+        Cursor           = { fg = c.bg0, bg = s.cursor },
         CursorLine       = { bg = c.bg2 },
         CursorColumn     = { bg = c.bg2 },
-        CursorLineNr     = { fg = c.purple, bold = true },
+        CursorLineNr     = { fg = s.cursor, bold = true },
         CursorLineSign   = { fg = c.fg1, bg = c.bg1 },
         CursorLineFold   = { fg = c.fg1, bg = c.bg1 },
         LineNr           = { fg = c.fg2 },
@@ -23,11 +28,11 @@ M.setup = function(colors, utils)
         Visual           = { bg = c.purple_20 },
         VisualNOS        = { bg = c.purple_10 },
 
-        Search           = { fg = c.bg0,    bg = c.gold },
-        IncSearch        = { fg = c.bg0,    bg = c.orange },
-        CurSearch        = { fg = c.bg0,    bg = c.orange },
+        Search           = { fg = c.bg0,    bg = s.search },
+        IncSearch        = { fg = c.bg0,    bg = s.match },
+        CurSearch        = { fg = c.bg0,    bg = s.match },
         Substitute       = { fg = c.bg0,    bg = c.red },
-        MatchParen       = { fg = c.blue,   bg = c.purple_10, bold = true },
+        MatchParen       = { fg = s.info,   bg = c.purple_10, bold = true },
 
         ColorColumn      = { bg = c.bg_dark },
         SignColumn       = { fg = c.fg2, bg = c.bg0 },
@@ -55,16 +60,16 @@ M.setup = function(colors, utils)
 
         WildMenu         = { fg = c.fg0, bg = c.bg3, bold = true },
 
-        ErrorMsg         = { fg = c.red,        bold = true },
-        WarningMsg       = { fg = c.orange,     bold = true },
+        ErrorMsg         = { fg = s.error,      bold = true },
+        WarningMsg       = { fg = s.warning,    bold = true },
         ModeMsg          = { fg = c.green,      bold = true },
         MoreMsg          = { fg = c.blue,       bold = true },
         Question         = { fg = c.cyan,       bold = true },
         Title            = { fg = c.magenta,    bold = true },
 
-        DiffAdd          = { fg = c.green,  bg = c.bg1 },
-        DiffDelete       = { fg = c.red,    bg = c.bg1 },
-        DiffChange       = { fg = c.blue,   bg = c.bg1 },
+        DiffAdd          = { fg = s.added,    bg = c.bg1 },
+        DiffDelete       = { fg = s.removed,  bg = c.bg1 },
+        DiffChange       = { fg = s.modified, bg = c.bg1 },
         DiffText         = { fg = c.yellow, bg = c.bg2, bold = true },
         DiffAdded        = { fg = c.green },
         DiffRemoved      = { fg = c.red },

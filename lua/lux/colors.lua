@@ -1,16 +1,26 @@
+-- Color system for the lux theme
+-- Provides unified access to color variants and semantic color mappings
 local M = {}
 
-local vesper = require("lux.colors.vesper")
-local prism = require("lux.colors.prism")
+-- Dynamic theme loading
+local themes = {
+    vesper = require("lux.colors.vesper"),
+    umbra = require("lux.colors.umbra"),
+    aurora = require("lux.colors.aurora"),
+    eos = require("lux.colors.eos"),
+    chroma = require("lux.colors.chroma"),
+}
 
-M.palette = vim.deepcopy(vesper.palette)
+-- Default to vesper variant
+M.palette = vim.deepcopy(themes.vesper.palette)
+M.semantic = vim.deepcopy(themes.vesper.semantic)
 
+-- Apply a specific color variant
+-- @param variant string: theme variant name
 M.apply_variant = function(variant)
-    if variant == "prism" then
-        M.palette = vim.deepcopy(prism.palette)
-    else
-        M.palette = vim.deepcopy(vesper.palette)
-    end
+    local theme = themes[variant] or themes.vesper
+    M.palette = vim.deepcopy(theme.palette)
+    M.semantic = vim.deepcopy(theme.semantic)
 end
 
 return M
