@@ -1,6 +1,6 @@
 # lux.nvim
 
-A visually rich Neovim colorscheme that balances form and function — radiant in light, deep in the dark.
+A stylish and functional Neovim colorscheme with radiant light themes and deep, atmospheric dark variants. Designed for readability, elegance, and seamless plugin integration.
 
 ## ✨ Features
 
