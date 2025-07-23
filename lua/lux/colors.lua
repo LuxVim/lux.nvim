@@ -1,5 +1,3 @@
--- Color system for the lux theme
--- Provides unified access to color variants and semantic color mappings
 local M = {}
 
 -- Dynamic theme loading

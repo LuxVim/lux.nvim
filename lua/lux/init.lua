@@ -21,7 +21,7 @@ M.setup = function(opts)
         vim.cmd("syntax reset")
     end
   
-    vim.g.colors_name   = "lux"
+    vim.g.colors_name   = "lux-" .. config.variant
     vim.o.termguicolors = true
     local colors        = require("lux.colors")
     local utils         = require("lux.utils")
