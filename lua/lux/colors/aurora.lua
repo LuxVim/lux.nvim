@@ -88,9 +88,10 @@ M.semantic = {
     removed     = M.palette.red,
     
     -- Plugin specific
-    border_accent = M.palette.aurora_teal,
-    prompt        = M.palette.aurora_magenta,
-    special       = M.palette.aurora_purple,
+    border_accent       = M.palette.aurora_teal,
+    prompt              = M.palette.aurora_magenta,
+    special             = M.palette.aurora_purple,
+    floating_special    = M.palette.aurora_magenta,
 }
 
 return M

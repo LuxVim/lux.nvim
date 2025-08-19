@@ -16,6 +16,7 @@ local plugins   = {
     "leap",
     "notify",
     "luxline",
+    "luxterm",
 }
 
 M.setup = function(colors, utils)
