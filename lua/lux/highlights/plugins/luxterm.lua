@@ -19,8 +19,7 @@ M.setup = function(colors, utils)
     })
     
     utils.highlight("LuxtermSessionNameSelected", {
-        -- fg = c.special, -- semantic blue
-        fg = c.yolo2, -- primary text
+        fg = c.floating_special, -- primary text
         bold = true,
     })
     
@@ -49,7 +48,7 @@ M.setup = function(colors, utils)
     
     -- Menu highlights
     utils.highlight("LuxtermMenuIcon", {
-        fg = c.yolo2,
+        fg = c.floating_special,
     })
     
     utils.highlight("LuxtermMenuText", {
@@ -63,7 +62,7 @@ M.setup = function(colors, utils)
     
     -- Preview pane highlights
     utils.highlight("LuxtermPreviewTitle", {
-        fg = c.yolo2,
+        fg = c.floating_special,
         bold = true,
     })
     
